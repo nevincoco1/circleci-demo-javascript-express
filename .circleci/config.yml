@@ -11,12 +11,9 @@ jobs:
   build:
     working_directory: ~/mern-starter
     docker:
-      - image: cimg/node:16.10.0
+      - image: cimg/node:16.8.0
     steps:
       - checkout
-      - run:
-          name: update-npm
-          command: 'sudo npm install -g npm@5'
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
