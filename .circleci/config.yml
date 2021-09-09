@@ -11,7 +11,7 @@ jobs:
   build:
     working_directory: ~/mern-starter
     docker:
-      - image: cimg/node:16.8.0
+      - image: cimg/node:16.10.0
     steps:
       - checkout
       - run:
