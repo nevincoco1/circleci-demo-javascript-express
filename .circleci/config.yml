@@ -11,7 +11,6 @@ jobs:
   build:
     working_directory: ~/mern-starter
     docker:
-      - image: cimg/base:2021.04
       - image: circleci/node:10.16.3
     steps:
       - checkout
